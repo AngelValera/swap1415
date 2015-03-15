@@ -1,0 +1,210 @@
+ÁNGEL vALERA MOTOS 
+
+EJERCICIOS SWAP TEMA 2
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Ejercicio T2.1:
+
+Calcular la disponibilidad del sistema si tenemos dos réplicas de cada elemento (en total 3 elementos en cada subsistema).
+
+Component 	Availability
+Web 		85%
+Application 	90%
+Database 	99.9%
+DNS 		98%
+Firewall 	85%
+Switch 		99%
+Data Center 	99.99%
+ISP 		95%
+
+La disponibilidad del sistema será:
+
+AS=85%*90%*99.9%*98%*85%*99%*99.99%*95% = 59.87%
+
+Si replicamos cada componente nos quedaría la tabla así:
+
+
+Web2 = 	85%+((1-85%)*85%)= 97.75%
+
+Application2 =	90%+((1-90%)*90%)= 99%
+
+Database2 = 99.9%+((1-99.9%)*99.9%)= 99.96%	
+
+DNS2 =	98%+((1-98%)*98%)= 97.75%	
+
+Firewall2 = 85%+((1-85%)*85%)= 97.75%
+	
+Switch2 = 99%+((1-99%)*99%)= 99.99%	
+	
+Data Center = Mantenemos un solo centro de datos
+	
+ISP2 = 95%+((1-95%)*95%)= 99.75%
+
+Component 	Availability
+Web2 		97.75%
+Application2 	99%
+Database2 	99.9999%
+DNS2 		99.96%
+Firewall2 	97.75%
+Switch2		99.99%
+Data Center 	99.99%
+ISP2		99.75%
+
+La nueva disponibilidad del sistema será de:
+
+AS= 97.75%*99%*99.9999%*99.96%*97.75%*99.99%*99.99%*99.75% = 94.30%
+
+Si volvemos a replicar la nueva tabla es:
+
+Web3 = 	97.75%+((1-97.75%)*85%)= 99.6625%
+
+Application3 =	99%+((1-99%)*90%)= 99.9%
+
+Database3 = 99.9999%+((1-99.9999%)*99.9%)= 99.9999999%
+
+DNS3 =	99.96%+((1-99.96%)*98%)= 99.9992%	
+
+Firewall3 = 97.75%+((1-97.75%)*85%)= 99.6625%
+	
+Switch3 = 99.99%+((1-99.99%)*99%)= 99.9999%	
+	
+Data Center = Mantenemos un solo centro de datos
+	
+ISP3 = 99.75%+((1-99.75%)*95%)= 99.9875%
+
+Component 	Availability
+Web3		99.6625%
+Application3 	99.9%
+Database3	99.9999999%
+DNS3 		99.9992%
+Firewall3 	99.6625%
+Switch3		99.9999%
+Data Center 	99.99%
+ISP3		99.9875%
+
+La nueva disponibilidad del sistema será de:
+
+AS=99.6625%*99.9%*99.9999999%*99.9992%*99.6625%*99.9999%*99.99%*99.9875% = 99.20%
+
+Tras replicar 3 veces cada componente tendremos un sistema con una disponibildad del 99.20%.
+-----------------------------------------------------------------------------------------------------------------------------------
+
+Ejercicio T2.2:
+Buscar frameworks y librerías para diferentes lenguajes que permitan hacer aplicaciones altamente disponibles con relativa facilidad.
+
+Como ejemplo, examina PM2
+https://github.com/Unitech/pm2
+que sirve para administrar clústeres de NodeJS.
+
+
+Ejemplo 1: GRAILS
+
+	Grails es un framework para aplicaciones web libre desarrollado sobre el lenguaje de programación Groovy (el cual a su vez
+se basa en la Java platform). Grails pretende ser un marco de trabajo altamente productivo siguiendo paradigmas tales como
+convención sobre configuración o no te repitas (DRY), proporcionando un entorno de desarrollo estandarizado y ocultando gran
+parte de los detalles de configuración al programador.
+
+http://es.wikipedia.org/wiki/Grails#Framework_web
+
+Ejemplo 2: Apache Struts
+
+Struts es una herramienta de soporte para el desarrollo de aplicaciones Web bajo el patrón MVC bajo la plataforma Java EE 
+(Java Enterprise Edition). Struts se desarrollaba como parte del proyecto Jakarta de la Apache Software Foundation, pero 
+actualmente es un proyecto conocido como Apache Struts.
+Struts permite reducir el tiempo de desarrollo. Su carácter de "software libre" y su compatibilidad con todas las plataformas
+en las que Java Entreprise esté disponible lo convierten en una herramienta altamente disponible.
+
+http://es.wikipedia.org/wiki/Apache_Struts
+
+Ejemplo 3: gvNIX
+
+gvNIX es un entorno de código abierto para el desarrollo rápido de aplicaciones web (RAD) con lenguaje Java, altamente productivo
+ y flexible. Es una distribución de Spring Roo centrada en reutilizar el conocimiento y los estándares de las organizaciones para
+ construir sus aplicaciones de gestión.
+
+http://administracionelectronica.gob.es/ctt/gvnix#.VQQkgo6G9y4
+-----------------------------------------------------------------------------------------------------------------------------------
+Ejercicio T2.3:
+¿Cómo analizar el nivel de carga de cada uno de los subsistemas en el servidor?
+Buscar herramientas y aprender a usarlas.
+
+A la hora de monitorizar nuestro sistema tenemos varias herramientas:
+
+ANALIZANDO QUÉ OCURRE EN EL KERNEL CON DMESG
+
+El kernel de Linux permite conocer qué actividad ha ocurrido gracias a los mensajes que proporciona el kernel. Esto es especialmente útil para
+detectar problemas con el HW o periféricos.
+
+Si estamos usando windows podemos usarla herramienta Perfmon:
+
+Esta herramienta nos permite controlar el estado del servidor de manera visual así como recopilar datos
+para su posterior uso esta herramienta se encarga de recopilar los datos proporcionados por otros sistemas dentro de Windows, utilizando para ello
+ recopiladores de datos y proporcionarnos después un informe.
+
+ Para Linux Podemos usar varios Monitores como pueden ser Munin, Nagios o Ganglia entre otros:
+
+Munin es un sistema de monitorización de código abierto, tiene la capacidad de ofertar alertas al usuario sobre un fallo y también sobre su posterior 
+resolución. Es sencillo de usar y ofrece varias opciones de monitorización.
+http://en.wikipedia.org/wiki/Munin_%28software%29
+
+Ganglia es un proyecto alojado en http://ganglia.sourceforge.net/ que monitoriza sistemas de cómputo distribuidos (normalmente para altas prestaciones) y
+permite una gran escalabilidad.
+Como puede verse en su página, importantes instituciones y compañías lo usan (p.ej. UC Berkely, MIT, Twitter, …).
+
+
+Realicé algún ejemplo de uso en la asignatura de Ingeniería de Servidores, puede echarle un ojo en el pdf p3_AngValMot.pdf
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Ejercicio T2.4:
+Buscar ejemplos de balanceadores software y hardware (productos comerciales).
+Buscar productos comerciales para servidores de aplicaciones.
+Buscar productos comerciales para servidores de almacenamiento.
+
+
+
+Kemp Technologies ofrece un balanceador de carga gratuito para DevOps
+
+SOFTWARE
+
+El LoadMaster gratuito de KEMP es un appliance virtual optimizado y fortalecido. De esta forma se reduce al mínimo la necesidad
+de configurar el host y alivia las preocupaciones relacionadas con asegurar que la solución al completo está configurada correctamente
+en lo que se refiere a la protección contra ataques. Como la arquitectura de la aplicación y el protocolo de uso pueden variar ampliamente,
+un balanceador de carga que tenga distintas capacidades también es importante durante la etapa de desarrollo intermedia.
+http://diarioti.com/kemp-technologies-ofrece-un-balanceador-de-carga-gratuito-para-devops/86265
+
+El software EMC Isilon SmartConnect lo ayuda a cumplir con las exigencias de un mundo 24x7 siempre activo con requisitos de almacenamiento 
+de datos en rápido crecimiento. Gracias a sus funcionalidades inteligentes y automáticas de balanceo de cargas y failover de conexión de clientes,
+SmartConnect optimiza el rendimiento del almacenamiento, proporciona un ambiente de datos de alta disponibilidad y simplifica la administración del almacenamiento.
+
+HARDWARE
+
+CISCO: Es el referente en Networking a día de hoy y sus productos de Routing basados en la CISCO IOS, incluyen funcionalidades de balanceo. 
+Si tenemos un router CISCO, tenemos un balanceador
+
+F5 Networks Big/IP: Con una gran cantidad de opciones y posibilidades, el F5 Big/IP es uno de los productos de balanceo de carga más conocidos del mercado.
+
+
+Productos comerciales para servidores de aplicaciones.
+
+ZOPE
+Zope es un proyecto comunitario activista de un entorno de desarrollo para la creación de sitios web dinámicos y/o aplicaciones web usando un servidor
+ de aplicaciones web orientado al objeto, escrito en el lenguaje de programación Python (con algunos componentes escritos en lenguaje C para optimizar
+
+IBM WebSphere Application Server (WAS, servidor de aplicaciones WebSphere)
+Es un servidor de aplicaciones de software, es el producto estrella dentro de la familia WebSphere de IBM. WAS está construido usando estándares abiertos tales como J2EE, XML, y Servicios Web.
+http://es.wikipedia.org/wiki/WebSphere_Application_Server
+
+Apache Tomcat
+Tomcat es un contenedor web con soporte de servlets y JSPs. Tomcat no es un servidor de aplicaciones, como JBoss o JOnAS. Incluye el compilador Jasper,
+ que compila JSPs convirtiéndolas en servlets. El motor de servlets de Tomcat a menudo se presenta en combinación con el servidor web Apache.
+http://es.wikipedia.org/wiki/Tomcat
+ su rendimiento) de código abierto publicado bajo la licencia Zope Public License.
+
+Productos comerciales para servidores de almacenamiento.
+
+Servidores PowerEdge de DEll integra servidores, almacenamiento, redes y gestión en una infraestructura compartida compacta optimizada para los entornos de oficina. 
+http://www.dell.com/es/empresas/p/enterprise-products#!tabId=21A49282
+
+Servidores y almacenamiento ThinkServer RD540 RD640 de Lenovo
+http://shop.lenovo.com/es/es/servers/
