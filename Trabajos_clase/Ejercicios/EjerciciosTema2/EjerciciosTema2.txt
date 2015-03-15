@@ -192,7 +192,8 @@ Zope es un proyecto comunitario activista de un entorno de desarrollo para la cr
  de aplicaciones web orientado al objeto, escrito en el lenguaje de programación Python (con algunos componentes escritos en lenguaje C para optimizar
 
 IBM WebSphere Application Server (WAS, servidor de aplicaciones WebSphere)
-Es un servidor de aplicaciones de software, es el producto estrella dentro de la familia WebSphere de IBM. WAS está construido usando estándares abiertos tales como J2EE, XML, y Servicios Web.
+Es un servidor de aplicaciones de software, es el producto estrella dentro de la familia WebSphere de IBM. WAS está construido usando estándares abiertos
+tales como J2EE, XML, y Servicios Web.
 http://es.wikipedia.org/wiki/WebSphere_Application_Server
 
 Apache Tomcat
