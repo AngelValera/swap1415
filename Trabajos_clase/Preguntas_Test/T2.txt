@@ -1,0 +1,31 @@
+Preguntas tipo test tema 2 SWAP
+
+Ángel Valera Motos
+
+
+Los aspectos más importantes a la horas de implementar una granja web son:
+
+	a) La seguridad.
+
+	b) La disponibilidad.
+  
+	c) La escalabilidad.
+
+	d) Los más importantes son tanto la b) como la c).
+
+Correcta: d) Los más importantes son tanto la b) como la c).
+
+---------------------------------------------------------------------------------------------------------
+
+Si nuestro sistema estuvo activo 8000 horas en un año, y estuvo caido 800 horas durante ese año.
+¿Cual fue sus disponibilidad?
+
+	a) 79.1%
+
+	b) 100%
+
+	c) 90%
+
+	d) 67.78%
+
+Correcta: c) 90%

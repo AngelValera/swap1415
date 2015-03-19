@@ -1,0 +1,29 @@
+Preguntas tipo test tema 3 SWAP
+
+Ángel Valera Motos
+
+A la hora de configurar una zona segura lo más recomendable es:
+
+	a) un DMZ simple.
+
+	b) un DMZ tradicional.
+
+	c) Un DMZ doble.
+
+	d) Un DMZ triple.
+
+Correcta: c) Un DMZ doble.
+
+-------------------------------------------------------------------------------------
+
+En la calidad del servicio influye:
+
+	a) el ancho de banda de conexión a Internet.
+
+	b) el filtrado y bloqueo de paquetes.
+
+	c) el balanceo de la carga entre los servidores.
+	
+	d) Todas las anteriores son verdaderas.
+
+Correcta: d) Todas las anteriores son verdaderas.

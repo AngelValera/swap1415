@@ -1,0 +1,30 @@
+Preguntas tipo test tema 1 SWAP
+
+Ángel Valera Motos
+
+
+
+En un sitio web mal planificado:
+
+	a) No se dan problemas de seguridad.
+
+	b) No se tardará en experimentar problemas conforme se incremente el tráfico red.
+
+	c) Merece la pena parchear el sistema a varios niveles.
+
+	d) Todas las anteriores son ciertas.
+
+Correcta: b) No se tardará en experimentar problemas conforme se incremente el tráfico red.
+
+----------------------------------------------------------------------------------------------------------------------
+Sobre un sitio web de éxito: 
+
+	a) Consiste en una máquina servidora ofrece todos los servicios, conectada directamente a internet.
+
+	b) Nunca habrá puntos débiles.
+
+	c) Comúnmente se pone en marcha sin cortafuegos adecuado.
+
+	d) Se suele montar una granaja web escalable y con alta disponibilidad.
+
+Correcta: d) Se suele montar una granaja web escalable y con alta disponibilidad.
