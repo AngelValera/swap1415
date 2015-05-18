@@ -1,0 +1,29 @@
+Preguntas tipo test tema 4 SWAP
+
+Ángel Valera Motos
+
+:Al la hora de usar un dispositivo balanceador específico :
+
+	a) Pueden realizar las mismas tareas que otra CPU de propósito general. 
+
+	b) Son extremadamente eficientes y rápidos haciendo esa tarea .
+
+	c) Son dispositivos tipo "caja blanca".
+
+	d) No suelen usar procesadores específicos para realizar las tareas de modificación de paquetes.
+
+Correcta: b) Son extremadamente eficientes y rápidos haciendo esa tarea .
+
+-------------------------------------------------------------------------------------
+
+:En cuanto al algoritmo de balanceo basado en ponderación 
+
+	a) El balanceador lleva la cuenta del número de conexiones a cada servidor.
+
+	b) Supone todas las máquinas con la misma potencia.
+
+	c) Podemos asignar un peso a cada máquina y así controlamos el % de conexiones que le pasamos a cada una.
+	
+	d) Cada grupo tiene una prioridad y máximo de conexiones que puede atender.
+
+Correcta: c) Podemos asignar un peso a cada máquina y así controlamos el % de conexiones que le pasamos a cada una.
