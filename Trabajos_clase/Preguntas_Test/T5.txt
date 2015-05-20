@@ -1,0 +1,33 @@
+Preguntas tipo test tema 5 SWAP
+
+Ángel Valera Motos
+
+A la hora de medir el número de conexiones concurrentes:
+
+	a) Se suele usar el protocolo UDP.
+
+	b) Se usa UDP para evitar colapsos en el servidor ya que tiene control de congestión.
+
+	c) Se suele usar el protocolo TCP porque es orientado a conexión, hay una fase de establecimiento de conexion y
+	   se mantiene abieta.	 
+
+	d) todas las anteriores son falsas.
+
+Correcta: c) Se suele usar el protocolo TCP porque es orientado a conexión, hay una fase de establecimiento de conexion y
+	     se mantiene abieta.
+
+-------------------------------------------------------------------------------------
+
+Si decidimos hacer una prueba de Carga (Load) a nuestro servidor, consiste en:
+
+	a) Usar cargas lo más parecido a lo que servirá realmente,en periodos cortos para evaluar el tiempo de respuesta de
+          los usuarios.
+
+	b) Usar actividad creciente hasta detectar el punto de saturación.
+
+	c) aplicar fuertes picos de carga durante cortos periodos.
+	
+	d) pruebas preliminares para comprobar que el sistema está listo para los siguientes tests.
+
+Correcta: a) Usar cargas lo más parecido a lo que servirá realmente,en periodos cortos para evaluar el tiempo de respuesta de
+          los usuarios. 
