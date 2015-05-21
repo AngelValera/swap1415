@@ -1,0 +1,31 @@
+Preguntas tipo test tema 6 SWAP
+
+Ángel Valera Motos
+
+A la hora de implementar y configurar un cortafuegos :
+
+	a) Necesita la instalación de servidores redundantes.
+
+	b) Es una labor tediosa y complicada y por eso no se suele llevar a cabo.
+
+	c) No oculta información de los servidores a otras redes.
+
+	d) Realiza un consumo excesivo de recursos, reduciendo el tráfico global 
+	   que un servidor recibirá.
+
+Correcta: a) Necesita la instalación de servidores redundantes. 
+
+-------------------------------------------------------------------------------------
+
+Una practica de seguridad recomendada es :
+
+	a) Mantener todos los servicios que el servidor no utiliza, por si alguna vez hiciesen
+	   falta.
+
+	b) No usar ningún tipo de balanceador ya que con ello no evitamos ningún tipò de ataque.
+
+	c) Tener un sistema de copias de seguridad automatizado.
+	
+	d) Todas las anteriores son falsas.
+
+Correcta: c) Tener un sistema de copias de seguridad automatizado. 
