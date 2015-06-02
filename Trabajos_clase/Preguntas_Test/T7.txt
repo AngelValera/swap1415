@@ -1,0 +1,35 @@
+Preguntas tipo test tema 7 SWAP
+
+Ángel Valera Motos
+
+Uno de los factores a tener en cuenta al diseñar la arquitectura de la BD:
+
+	a) No usar una arquitectura basada en cluster.
+
+	b) Las búsquedas que devuelvan resultados muy grandes afectarán al rendimiento de
+	   CPU, almacenamiento y red.
+
+	c) El tipo de accesos a la BD no influye.
+
+	d) Una BD no se podrá escalar en el futuro aunque desde el principio se instaló hardware
+	   con capacidad de ampliación
+
+Correcta: b) Las búsquedas que devuelvan resultados muy grandes afectarán al rendimiento de
+	     CPU, almacenamiento y red. 
+
+-------------------------------------------------------------------------------------
+
+En cuanto a los RAID 1:
+
+	a) Ofrece gran fiabilidad, ya que para que el conjunto falle es necesario que lo 
+	   hagan todos sus discos.
+
+	b) Necesita un mínimo de 3 discos físicos.
+
+	c) Es poco común. Se abandonó por el RAID 5 y 6. 
+	
+	d) no ofrece protección contra fallos en los discos, ya que no se escribe información
+           duplicada o información de paridad.
+
+Correcta: a) Ofrece gran fiabilidad, ya que para que el conjunto falle es necesario que lo 
+	   hagan todos sus discos. 
