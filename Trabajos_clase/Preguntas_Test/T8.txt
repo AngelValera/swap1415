@@ -1,0 +1,29 @@
+Preguntas tipo test tema 8 SWAP
+
+Ángel Valera Motos
+
+El protocolo más comúnmente utilizado en el almacenamiento de elementos de la granja web es:
+
+	a) NFS
+
+	b) NAS
+
+	c) SAN
+
+	d) SSA
+
+Correcta: a) NFS 
+
+-------------------------------------------------------------------------------------
+
+En cuanto al análisis de los logs :
+
+	a) Nos permitirá determinar qué contenido es el más demandado
+
+	b) A partir de los logs podremos descubrir posibles ataques.
+
+	c) Podremos identificar fallos (errores tipo 404 ó 500).
+	
+	d) Todos los anteriores son ciertos.
+
+Correcta: d) Todos los anteriores son ciertos. 
